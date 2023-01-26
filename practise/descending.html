@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Elements sorted in Ascending Order!!</h1>
+    <script>
+    var x = parseInt(prompt("Enter num")),
+    y = parseInt(prompt("Enter num")),
+    z = parseInt(prompt("Enter num"));
+
+if (x < y && x < z) {
+    document.write(x);
+    if (y < z) {
+        document.write(y);
+        document.write(z);
+    } else {                  // add this
+        document.write(z);
+        document.write(y); 
+    }
+} else if (y < z && y < x) {
+    document.write(y);
+    if (z < x) {
+        document.write(z);
+        document.write(x);
+    } else {                  // add this
+        document.write(x);
+        document.write(z);
+    }
+} else {                      // you can skip the comparison here,
+    document.write(z);        // because there is no other possibillity
+    if (x < y) {
+        document.write(x);
+        document.write(y);
+    } else {                  // add this
+        document.write(y);
+        document.write(x);
+    }
+}
+</script>    
+</body>
+</html>

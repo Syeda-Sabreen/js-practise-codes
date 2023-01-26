@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<div>
+    <input type="number" placeholder="Enter Number">
+    <button>Check</button>
+    <h1>Result</h1>
+</div>
+<script>
+let input = document.querySelector("input");
+let btnCheck = document.querySelector("button");
+let output = document.querySelector("h1");
+btnCheck.addEventListener("click", () => {
+  let num = Number(input.value);
+  let result;
+  if (num == 0) result = "Zero";
+  else if (num > 0) result = "Positive";
+  else if (num < 0) result = "Negative";
+  output.innerText = result;
+});
+</script>
+</body>
+</html>
